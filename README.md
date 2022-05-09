@@ -76,8 +76,25 @@ Lekezeli delay változó beolvasását.
 ```java
  public static Integer delay(){}
 ```
-Létrehozza a leszármazott elmet XML mentése során.
+Létrehozza a leszármazott elemet XML mentése során.
 ```java
  private static void createChildElement(Document document, Element parent,
                                            String tagName, String value) {}
+```
+## XML fájl szerkezete
+```xml
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <bills>
+        <bill>
+            <documentNumber>2058/2022</documentNumber>
+            <buyer>Bronwyn Lavern</buyer>
+            <date>2022-05-10</date>
+            <fulfillment>2022-05-10</fulfillment>
+            <deadline>2022-05-20</deadline>
+            <net>8661</net>
+            <VAT>2339</VAT>
+            <gross>11000</gross>
+            <delay>0</delay>
+        </bill>
+   </bills>
 ```
