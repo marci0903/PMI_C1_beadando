@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bills>
+    <bill>
+        <documentNumber>2058/2022</documentNumber>
+        <buyer>Bronwyn Lavern</buyer>
+        <date>2022-05-10</date>
+        <fulfillment>2022-05-10</fulfillment>
+        <deadline>2022-05-20</deadline>
+        <net>8661</net>
+        <VAT>2339</VAT>
+        <VAT>11000</VAT>
+        <VAT>0</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2059/2022</documentNumber>
+        <buyer>Tameka Chelle</buyer>
+        <date>2022-08-08</date>
+        <fulfillment>2022-08-08</fulfillment>
+        <deadline>2022-08-18</deadline>
+        <net>400000</net>
+        <VAT>108000</VAT>
+        <VAT>508000</VAT>
+        <VAT>22</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2060/2022</documentNumber>
+        <buyer>Phillis Clem</buyer>
+        <date>2022-11-01</date>
+        <fulfillment>2022-11-01</fulfillment>
+        <deadline>2022-11-11</deadline>
+        <net>10000</net>
+        <VAT>2700</VAT>
+        <VAT>12700</VAT>
+        <VAT>39</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2061/2022</documentNumber>
+        <buyer>Darrin Jannah</buyer>
+        <date>2022-11-28</date>
+        <fulfillment>2022-11-28</fulfillment>
+        <deadline>2022-12-08</deadline>
+        <net>7874</net>
+        <VAT>2126</VAT>
+        <VAT>12700</VAT>
+        <VAT>0</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2062/2022</documentNumber>
+        <buyer>Corie Jocelin</buyer>
+        <date>2022-12-19</date>
+        <fulfillment>2022-12-19</fulfillment>
+        <deadline>2022-12-25</deadline>
+        <net>35748</net>
+        <VAT>4252</VAT>
+        <VAT>40000</VAT>
+        <VAT>21</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2063/2022</documentNumber>
+        <buyer>Columbine Connell</buyer>
+        <date>2022-05-17</date>
+        <fulfillment>2022-05-17</fulfillment>
+        <deadline>2022-05-19</deadline>
+        <net>16535</net>
+        <VAT>4465</VAT>
+        <VAT>21000</VAT>
+        <VAT>21</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2064/2022</documentNumber>
+        <buyer>Anne Camille</buyer>
+        <date>2022-07-15</date>
+        <fulfillment>2022-07-15</fulfillment>
+        <deadline>2022-07-25</deadline>
+        <net>39500</net>
+        <VAT>10665</VAT>
+        <VAT>50165</VAT>
+        <VAT>55</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2065/2022</documentNumber>
+        <buyer>Keighley Archibald</buyer>
+        <date>2022-07-22</date>
+        <fulfillment>2022-07-22</fulfillment>
+        <deadline>2022-07-27</deadline>
+        <net>39500</net>
+        <VAT>10665</VAT>
+        <VAT>50165</VAT>
+        <VAT>13</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2066/2022</documentNumber>
+        <buyer>Wilbur Curt</buyer>
+        <date>2022-09-28</date>
+        <fulfillment>2022-09-28</fulfillment>
+        <deadline>2022-10-05</deadline>
+        <net>39500</net>
+        <VAT>10665</VAT>
+        <VAT>50165</VAT>
+        <VAT>0</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2067/2022</documentNumber>
+        <buyer>Geffrey Patricia</buyer>
+        <date>2022-10-18</date>
+        <fulfillment>2022-10-18</fulfillment>
+        <deadline>2022-10-24</deadline>
+        <net>39500</net>
+        <VAT>10665</VAT>
+        <VAT>50165</VAT>
+        <VAT>2</VAT>
+    </bill>
+    <bill>
+        <documentNumber>2068/2022</documentNumber>
+        <buyer>John Doe</buyer>
+        <date>2022-01-01</date>
+        <fulfillment>2022-01-02</fulfillment>
+        <deadline>2022-03-04</deadline>
+        <net>0</net>
+        <VAT>0</VAT>
+        <VAT>0</VAT>
+        <VAT>0</VAT>
+    </bill>
+</bills>
