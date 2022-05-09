@@ -14,3 +14,8 @@ A program segítségével a felhasználónak lehetősége van számlák táról�
     private int gross;
     private int delay;
 ```
+## Metódusok
+```java
+  public  static ArrayList<Bill> readBillsFromXml(String filepath){}
+```
+Beolvas az XML fájlban szerepló számlákat.
