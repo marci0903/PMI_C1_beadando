@@ -24,7 +24,7 @@ import java.util.Scanner;
 public class ManagerMain {
     private static  final  Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
-         ArrayList<Bill> bills=readBillsFromXml("src/main/resources/bills.xml");
+         ArrayList<Bill> bills=readBillsFromXml("src/main/resources/bills1.xml");
          int choice = -1;
          while (choice != 0) {
              switch (choice) {
@@ -46,7 +46,7 @@ public class ManagerMain {
                  scanner.nextLine();
              }
          }
-         saveUsersToXml(bills,"src/main/resources/bills.xml");
+         saveUsersToXml(bills,"src/main/resources/bills1.xml");
     }
     public  static ArrayList<Bill> readBillsFromXml(String filepath){
         ArrayList<Bill> bills=new ArrayList<>();
@@ -94,6 +94,7 @@ public class ManagerMain {
                             }
                         }
                     }
+
                     bills.add(new Bill(documentNumber,buyer,date,fulfillment,deadline,Integer.parseInt(net),Integer.parseInt(VAT),Integer.parseInt(gross),Integer.parseInt(delay)));
                 }
             }
@@ -128,7 +129,7 @@ public class ManagerMain {
         Integer newGross=scanInt();
         scanner.nextLine();
         System.out.println("Enter delay of new bill.");
-        Integer newDelay=scanInt();
+        Integer newDelay=delay();
         scanner.nextLine();
         int newVAT= (int) (newGross*0.27);
         int newNet=(int) (newGross*0.73);
@@ -270,7 +271,7 @@ public class ManagerMain {
                 Integer gross=scanInt();
                 scanner.nextLine();
                 System.out.println("Enter delay of  bill what you want to modify.");
-                Integer delay=scanInt();
+                Integer delay=delay();
                 scanner.nextLine();
                 int VAT= (int) (gross*0.27);
                 int net=(int) (gross*0.73);
@@ -331,8 +332,8 @@ public class ManagerMain {
                 createChildElement(document, userElement, "deadline", bill.getDeadline());
                 createChildElement(document, userElement, "net", String.valueOf(bill.getNet()));
                 createChildElement(document, userElement, "VAT", String.valueOf(bill.getVAT()));
-                createChildElement(document, userElement, "VAT", String.valueOf(bill.getGross()));
-                createChildElement(document, userElement, "VAT", String.valueOf(bill.getDelay()));
+                createChildElement(document, userElement, "gross", String.valueOf(bill.getGross()));
+                createChildElement(document, userElement, "delay", String.valueOf(bill.getDelay()));
             }
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
@@ -349,14 +350,35 @@ public class ManagerMain {
     }
     public static Integer scanInt(){
          while(true){
+
              try{
                  int number=scanner.nextInt();
-                 return number;
+                 if(number>1000){
+
+                 return number;}
+                 else{
+                     System.out.println("Make sure the number is bigger than 1000.");
+                 }
              }catch (Exception e){
                  System.out.println("Make sure you entered Integer.");
                  scanner.nextLine();
              }
          }
+    }
+    public static Integer delay(){
+        while(true){
+
+            try{
+                int number=scanner.nextInt();
+
+
+                    return number;
+
+            }catch (Exception e){
+                System.out.println("Make sure you entered Integer.");
+                scanner.nextLine();
+            }
+        }
     }
     private static void createChildElement(Document document, Element parent,
                                            String tagName, String value) {

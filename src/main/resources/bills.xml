@@ -8,8 +8,8 @@
         <deadline>2022-05-20</deadline>
         <net>8661</net>
         <VAT>2339</VAT>
-        <VAT>11000</VAT>
-        <VAT>0</VAT>
+        <gross>11000</gross>
+        <delay>0</delay>
     </bill>
     <bill>
         <documentNumber>2059/2022</documentNumber>
@@ -19,8 +19,8 @@
         <deadline>2022-08-18</deadline>
         <net>400000</net>
         <VAT>108000</VAT>
-        <VAT>508000</VAT>
-        <VAT>22</VAT>
+        <groos>508000</groos>
+        <delay>22</delay>
     </bill>
     <bill>
         <documentNumber>2060/2022</documentNumber>
@@ -30,8 +30,8 @@
         <deadline>2022-11-11</deadline>
         <net>10000</net>
         <VAT>2700</VAT>
-        <VAT>12700</VAT>
-        <VAT>39</VAT>
+        <groos>12700</groos>
+        <delay>39</delay>
     </bill>
     <bill>
         <documentNumber>2061/2022</documentNumber>
@@ -41,8 +41,8 @@
         <deadline>2022-12-08</deadline>
         <net>7874</net>
         <VAT>2126</VAT>
-        <VAT>12700</VAT>
-        <VAT>0</VAT>
+        <groos>12700</groos>
+        <delay>0</delay>
     </bill>
     <bill>
         <documentNumber>2062/2022</documentNumber>
@@ -52,8 +52,8 @@
         <deadline>2022-12-25</deadline>
         <net>35748</net>
         <VAT>4252</VAT>
-        <VAT>40000</VAT>
-        <VAT>21</VAT>
+        <groos>40000</groos>
+        <delay>21</delay>
     </bill>
     <bill>
         <documentNumber>2063/2022</documentNumber>
@@ -63,8 +63,8 @@
         <deadline>2022-05-19</deadline>
         <net>16535</net>
         <VAT>4465</VAT>
-        <VAT>21000</VAT>
-        <VAT>21</VAT>
+        <groos>21000</groos>
+        <delay>21</delay>
     </bill>
     <bill>
         <documentNumber>2064/2022</documentNumber>
@@ -74,8 +74,8 @@
         <deadline>2022-07-25</deadline>
         <net>39500</net>
         <VAT>10665</VAT>
-        <VAT>50165</VAT>
-        <VAT>55</VAT>
+        <groos>50165</groos>
+        <delay>55</delay>
     </bill>
     <bill>
         <documentNumber>2065/2022</documentNumber>
@@ -85,8 +85,8 @@
         <deadline>2022-07-27</deadline>
         <net>39500</net>
         <VAT>10665</VAT>
-        <VAT>50165</VAT>
-        <VAT>13</VAT>
+        <groos>50165</groos>
+        <delay>13</delay>
     </bill>
     <bill>
         <documentNumber>2066/2022</documentNumber>
@@ -96,8 +96,8 @@
         <deadline>2022-10-05</deadline>
         <net>39500</net>
         <VAT>10665</VAT>
-        <VAT>50165</VAT>
-        <VAT>0</VAT>
+        <groos>50165</groos>
+        <delay>0</delay>
     </bill>
     <bill>
         <documentNumber>2067/2022</documentNumber>
@@ -107,8 +107,8 @@
         <deadline>2022-10-24</deadline>
         <net>39500</net>
         <VAT>10665</VAT>
-        <VAT>50165</VAT>
-        <VAT>2</VAT>
+        <groos>50165</groos>
+        <delay>2</delay>
     </bill>
     <bill>
         <documentNumber>2068/2022</documentNumber>
@@ -118,7 +118,7 @@
         <deadline>2022-03-04</deadline>
         <net>0</net>
         <VAT>0</VAT>
-        <VAT>0</VAT>
-        <VAT>0</VAT>
+        <groos>0</groos>
+        <delay>0</delay>
     </bill>
 </bills>
