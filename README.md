@@ -18,4 +18,16 @@ A program segítségével a felhasználónak lehetősége van számlák táról�
 ```java
   public  static ArrayList<Bill> readBillsFromXml(String filepath){}
 ```
-Beolvas az XML fájlban szerepló számlákat.
+Beolvas az XML fájlban szereplő számlákat.
+```java
+  private static void listBills(ArrayList<Bill> bills){}
+```
+Kilistázza az XML-ből beolvasott számlákat.
+```java
+  private static void addNewBill(ArrayList<Bill> bills){}
+```
+Új számlákat vesz fel.
+```java
+  private static String scanNewDocument(ArrayList<Bill> bills){}
+```
+Új dokumentum számot olvas be és lekezeli a felhasználó által keletkező beolvasási hibákat.
