@@ -370,10 +370,11 @@ public class ManagerMain {
 
             try{
                 int number=scanner.nextInt();
-
-
+                if(number>=0) {
                     return number;
-
+                }else{
+                    System.out.println("Make sure the delay is >=0.");
+                }
             }catch (Exception e){
                 System.out.println("Make sure you entered Integer.");
                 scanner.nextLine();
