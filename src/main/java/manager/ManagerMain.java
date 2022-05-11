@@ -123,8 +123,26 @@ public class ManagerMain {
         String newDate=scanDate();
         System.out.println("Enter fulfillment of new bill.(2022-01-01)");
         String newFulfillment=scanDate();
+        while(true){
+            if(newDate.compareTo(newFulfillment)<=0){
+                break;
+            }else{
+                System.out.println("Make sure fulillment is bigger than date.");
+                newFulfillment=scanDate();
+            }
+
+        }
         System.out.println("Enter deadline of new bill.(2022-01-01)");
         String newDeadline=scanDate();
+        while(true){
+            if(newFulfillment.compareTo(newDeadline)<=0){
+                break;
+            }else{
+                System.out.println("Make sure deadline is bigger than date.");
+                newDeadline=scanDate();
+            }
+
+        }
         System.out.println("Enter gross of new bill.");
         Integer newGross=scanInt();
         scanner.nextLine();
@@ -140,16 +158,19 @@ public class ManagerMain {
             try {
                 String newDocument = scanner.nextLine();
                 String[] splitDocument = newDocument.split("/");
+
                 if (Integer.parseInt(splitDocument[0]) <= 0) {
                     System.out.println("Make sure the format is correct. (2000/2022)");
                 } else {
-                    if (Integer.parseInt(splitDocument[1]) < 2000 && Integer.parseInt(splitDocument[1]) >= 2022) {
+                    if (!(Integer.parseInt(splitDocument[1]) > 2000)||!(Integer.parseInt(splitDocument[1]) <= 2022  )) {
                         System.out.println("Make sure the date is relevant.(Between 2000 and 2022)");
-                    } else {
+
+                    }else {
                         boolean isIn=false;
                         for(Bill bill:bills){
-                            if(bill.getDocumentNumber().equals(newDocument)){
-                                isIn=true;
+                            if (bill.getDocumentNumber().equals(newDocument)) {
+                                isIn = true;
+                                break;
                             }
                         }
                         if(isIn){
@@ -228,10 +249,10 @@ public class ManagerMain {
                         }
                     }
                     }else{
-                        System.out.println("Make sure the format is correct. (2000-01-01)");
+                        System.out.println("Make sure the date is between 2022 and 1900");
                     }
                 }else{
-                    System.out.println("Make sure the format is correct. (2000-01-01)");
+                    System.out.println("Make sure the format is correct. (2000-01-01)5");
                 }
             }catch (Exception e){
                 System.out.println("Make sure the format is correct. (2000-01-01)");
@@ -265,8 +286,30 @@ public class ManagerMain {
                 String date=scanDate();
                 System.out.println("Enter fulfillment of  bill what you want to modify.(2022-01-01)");
                 String fulfillment=scanDate();
+
+
+                while(true){
+                    if(date.compareTo(fulfillment)<=0){
+                        break;
+                    }else{
+                        System.out.println("Make sure fulillment is bigger than date.");
+                        fulfillment=scanDate();
+                    }
+
+                }
                 System.out.println("Enter deadline of  bill what you want to modify.(2022-01-01)");
                 String deadline=scanDate();
+                while(true){
+                    if(fulfillment.compareTo(deadline)<=0){
+                        break;
+                    }else{
+                        System.out.println("Make sure deadline is bigger than date.");
+                        deadline=scanDate();
+                    }
+
+                }
+
+
                 System.out.println("Enter gross of  bill what you want to modify.");
                 Integer gross=scanInt();
                 scanner.nextLine();
