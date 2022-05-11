@@ -162,7 +162,7 @@ public class ManagerMain {
                 if (Integer.parseInt(splitDocument[0]) <= 0) {
                     System.out.println("Make sure the format is correct. (2000/2022)");
                 } else {
-                    if (!(Integer.parseInt(splitDocument[1]) > 2000)||!(Integer.parseInt(splitDocument[1]) <= 2022  )) {
+                    if (!(Integer.parseInt(splitDocument[1]) >= 2000)||!(Integer.parseInt(splitDocument[1]) <= 2022  )) {
                         System.out.println("Make sure the date is relevant.(Between 2000 and 2022)");
 
                     }else {
